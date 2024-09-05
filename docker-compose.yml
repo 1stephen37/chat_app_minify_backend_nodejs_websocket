@@ -1,0 +1,12 @@
+
+services:
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: chat_app
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: bestdaxuo113
+    volumes:
+      - ./data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
